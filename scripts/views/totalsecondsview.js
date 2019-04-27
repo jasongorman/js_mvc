@@ -4,7 +4,7 @@ export function TotalSecondsView(clock, element) {
     this.clock = clock;
     this.element = element;
 
-    this.on_update = () => {
+    this.update = () => {
         this.element.innerHTML = "    <div class=\"row\">\n" +
             "        <div class=\"col-sm-4\">\n" +
             "            <p>Total Seconds: </p> " + this.clock.totalSeconds() + "\n" +

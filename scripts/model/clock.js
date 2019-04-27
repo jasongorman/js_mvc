@@ -4,7 +4,7 @@ function Observable(){
 
     this.notify = () => {
         for (var observer of this.observers) {
-            observer.on_update();
+            observer.update();
         }
     }
 
