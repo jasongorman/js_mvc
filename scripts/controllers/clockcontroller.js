@@ -1,4 +1,4 @@
-export function Clockcontroller(clock){
+export function ClockController(clock){
     this.clock = clock;
 
     this.reset = event => {

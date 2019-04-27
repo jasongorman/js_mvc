@@ -1,11 +1,11 @@
 import {Clock} from "./model/clock.js"
 import {HoursMinsSecsView} from "./views/hoursminssecsview.js"
 import {TotalSecondsView} from "./views/totalsecondsview.js";
-import {Clockcontroller} from "./controllers/clockcontroller.js";
+import {ClockController} from "./controllers/clockcontroller.js";
 
 const clock = new Clock();
 
-const controller = new Clockcontroller(clock);
+const controller = new ClockController(clock);
 
 document.getElementById("reset").addEventListener("click", controller.reset);
 
